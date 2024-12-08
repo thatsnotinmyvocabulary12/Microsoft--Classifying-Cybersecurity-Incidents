@@ -1,15 +1,14 @@
-Microsoft: Classifying Cybersecurity Incidents with Machine Learning
-Overview
+## MICROSOFT CLASSIFYING CYBERSECURITY INCIDENTS
+# OVERVIEW
 This repository contains the implementation of a machine learning pipeline designed to classify cybersecurity incidents into three categories: True Positive (TP), Benign Positive (BP), and False Positive (FP). Using the Microsoft GUIDE dataset, the project leverages advanced data preprocessing, feature engineering, and classification techniques to optimize model performance and support Security Operation Centers (SOCs) in automating incident triage.
 
-Business Use Cases
+# BUSSINESS USE CASES:
 The developed solution can significantly improve multiple areas of cybersecurity operations:
-
 Security Operations Centers (SOCs): Automates the triage process and enhances analysts' decision-making.
 Incident Response Automation: Provides SOCs with faster, data-driven insights and recommended actions.
 Threat Intelligence: Increases the precision of detecting true and false positives using historical data.
 Enterprise Security Management: Reduces false positives, improves threat detection, and ensures swift incident response.
-Project Approach
+# PROJECT APPROACH
 1. Data Exploration and Preprocessing
 Initial Inspection: Load and examine the train dataset (train.csv) to understand the structure, data types, and distribution of the target variable.
 Exploratory Data Analysis (EDA): Visualize patterns, identify correlations, and detect anomalies, particularly class imbalances.
@@ -25,7 +24,7 @@ Handling Class Imbalance: Apply methods like SMOTE or adjust class weights to ha
 4. Final Evaluation
 Testing: Evaluate the final model using the test dataset (test.csv) and report key metrics.
 Comparison to Baseline: Ensure the model’s performance outperforms the baseline and holds up on unseen data.
-Results
+5.RESULTS
 Model Performance: A highly accurate classification model that predicts cybersecurity incident triage grades (TP, BP, FP).
 Feature Analysis: Insights into which features influence model predictions the most.
 Model Documentation: Comprehensive process documentation, highlighting each phase from data collection to model evaluation.
@@ -35,8 +34,7 @@ Precision: Measures the proportion of true positive predictions out of all posit
 Recall: Measures the model’s ability to identify all true positives, ensuring critical incidents are not missed.
 Dataset Overview
 The GUIDE dataset contains cybersecurity incident records annotated with triage grades (TP, BP, FP). The data is stratified and includes over 1 million triage-annotated incidents, ensuring a comprehensive representation of real-world security incidents.
-
-Features:
+6.Features:
 Evidence: Individual pieces of evidence like IP addresses, emails, and user details.
 Alerts: Aggregated evidence signaling a potential security incident.
 Incidents: A collection of alerts representing a complete security threat scenario.
@@ -46,20 +44,17 @@ Preprocess and engineer features.
 Train and evaluate your model.
 Check model performance with key metrics (Macro-F1 Score, Precision, Recall).
 
-Results
-Best Model:LIGHTGM
-Macro-F1 Score:
-Validation Set: 0.99
-Test Set: 0.96
-Feature Importance:
-Top features like OrgId, IncidentId,alertTitle and DetectorId significantly influenced predictions.
-Model Performance:
-my model is performing excellently overall, with Class 2 being well-detected (high TP) and Class 0(BP) and Class 1(FP) showing good.
+# RESULTS:
+Best Model is LIGHTGM
+overall F1 Score:
+Validation Set: 0.99,Test Set: 0.96
+Feature Importance:Top features like OrgId, IncidentId,alertTitle and DetectorId significantly influenced predictions.
+Model Performance:my model is performing excellently overall, with Class 2 being well-detected (high TP) and Class 0(BP) and Class 1(FP) showing good.
 
-Dataset
+# DATASET:
 Microsoft GUIDE Dataset (processed into traindata_processed.csv and testdata_processed.csv)
 
-Technologies Used:python
+# TECHNOLOGIES USED :python
 Pandas: Data handling and manipulation.
 Scikit-Learn: Model training (Random Forest), evaluation, and splitting data.
 Imbalanced-learn (imblearn): Handling imbalanced datasets with SMOTE.
