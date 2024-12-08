@@ -47,9 +47,12 @@ Check model performance with key metrics (Macro-F1 Score, Precision, Recall).
 # RESULTS:
 Best Model is LIGHTGM
 overall F1 Score:
-Validation Set: 0.99,Test Set: 0.96
-Feature Importance:Top features like OrgId, IncidentId,alertTitle and DetectorId significantly influenced predictions.
-Model Performance:my model is performing excellently overall, with Class 2 being well-detected (high TP) and Class 0(BP) and Class 1(FP) showing good.
+Validation Set: 0.99
+Test Set: 0.96
+Feature Importance:
+Top features like IncidentId,alertID,entity type,category influenced predictions.
+Model Performance:
+My model is performing excellently overall, with Class 2 being well-detected (high TP) and Class 0(BP) and Class 1(FP) showing good.
 
 # DATASET:
 Microsoft GUIDE Dataset (processed into traindata_processed.csv and testdata_processed.csv)
